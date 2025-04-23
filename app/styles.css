@@ -1,0 +1,165 @@
+:root {
+  --roxo: #6F42C1;
+  --lavanda: #8F9FF7;
+  --coral: #FF6E6C;
+  --cinza: #2C2C2C;
+  --off-white: #F9F9FB;
+  --menta: #B6EFC5;
+
+  --fonte-logo: 'Press Start 2P', monospace;
+  --fonte-titulo: 'VT323', monospace;
+  --fonte-texto: 'Poppins', sans-serif;
+}
+
+/* Base e reset */
+body {
+  font-family: var(--fonte-texto);
+  background-color: #000;
+  color: var(--off-white);
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar {
+  border-radius: 1rem;
+  background-color: var(--cinza);
+}
+
+.navbar-brand {
+  font-family: var(--fonte-logo);
+  color: var(--coral) !important;
+}
+
+.nav-link {
+  font-family: var(--fonte-logo);
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: var(--coral) !important;
+  text-decoration: underline;
+}
+
+.nav-link.active {
+  border-bottom: 2px solid var(--coral);
+}
+
+/* Botões */
+.btn {
+  font-family: var(--fonte-logo);
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-outline-light:hover,
+.btn-outline-light:focus {
+  background-color: var(--coral);
+  color: #000;
+  box-shadow: 0 0 8px var(--coral);
+}
+
+.btn-primary {
+  background-color: var(--coral);
+  border: none;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background-color: #ff514d;
+  transform: scale(1.03);
+}
+
+/* Cards e caixas */
+.card,
+section,
+.list-group-item {
+  background-color: #1a1a1a;
+  border-radius: 1rem;
+  border: 1px solid var(--roxo);
+  color: var(--off-white);
+}
+
+.card-title,
+h1, h2, h3, h4 {
+  font-family: var(--fonte-titulo);
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 12px rgba(143, 159, 247, 0.4);
+}
+
+/* Formulários */
+.form-control,
+.form-select {
+  border-radius: 0.5rem;
+  background-color: #1a1a1a;
+  border: 1px solid var(--lavanda);
+  color: var(--off-white);
+  font-family: var(--fonte-texto);
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--coral);
+  box-shadow: 0 0 0 0.25rem rgba(255, 110, 108, 0.4);
+}
+
+.form-range::-webkit-slider-thumb {
+  background-color: var(--coral);
+}
+
+.form-text,
+.form-label {
+  color: var(--off-white);
+  opacity: 0.95;
+}
+
+/* Listas e tabelas */
+.list-group-item {
+  background-color: transparent;
+  border: 1px solid var(--roxo);
+  color: var(--off-white);
+}
+
+.table {
+  color: var(--off-white);
+  background-color: #1f1f1f;
+}
+
+/* Acessibilidade */
+a:focus, button:focus, input:focus, select:focus {
+  outline: 2px dashed var(--lavanda);
+  outline-offset: 4px;
+}
+
+/* Footer */
+footer {
+  background-color: #1a1a1a;
+  color: var(--off-white);
+  font-size: 0.9rem;
+  font-family: var(--fonte-texto);
+  text-align: center;
+}
+
+/* Utilidades */
+.shadow-glow {
+  box-shadow: 0 0 10px var(--lavanda);
+}
+
+h1.title-glow {
+  color: var(--coral);
+  font-family: var(--fonte-logo);
+  text-shadow: 0 0 10px var(--coral);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .navbar-nav .nav-item {
+    margin-bottom: 0.5rem;
+  }
+}
