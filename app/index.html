@@ -4,65 +4,76 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Jogaê - Início</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="styles.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
   <script defer src="script.js"></script>
 </head>
 <body class="bg-dark text-light">
 
-  <!-- NAVBAR FIXA -->
-  <header class="container py-4">
-    <nav class="navbar navbar-expand-lg navbar-dark px-3" style="background-color: #2C2C2C; border-radius: 1rem;">
-      <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="index.html" style="font-family: 'Press Start 2P', monospace; color: #FF6E6C;">
-        <img src="imagens/jogae.png" alt="Logo Jogaê" width="32" height="32" />
-        Jogaê
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg px-3 py-2" style="background-color: var(--roxo);">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html" style="font-family: var(--fonte-logo); color: var(--coral);">
+        <img src="imagens/jogae.png" alt="Logo Jogaê" width="45" height="32"> Jogaê
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item"><a class="nav-link active text-light px-3" style="font-family: 'Press Start 2P', monospace; border-bottom: 2px solid #FF6E6C;" href="index.html">Início</a></li>
-          <li class="nav-item"><a class="nav-link text-light px-3" style="font-family: 'Press Start 2P', monospace;" href="pesquisa.html">Pesquisa</a></li>
-          <li class="nav-item"><a class="nav-link text-light px-3" style="font-family: 'Press Start 2P', monospace;" href="projeto.html">Projeto</a></li>
-          <li class="nav-item"><a class="nav-link text-light px-3" style="font-family: 'Press Start 2P', monospace;" href="news.html">News</a></li>
+        <ul class="navbar-nav mx-auto text-center" style="font-family: var(--fonte-logo);">
+          <li class="nav-item"><a class="nav-link active text-light" href="index.html">Início</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="pesquisa.html">Explorar</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="projeto.html">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="news.html">Novidades</a></li>
         </ul>
-        <div class="d-flex gap-2">
-          <button class="btn btn-outline-light btn-sm" style="font-family: 'Press Start 2P', monospace; border-color: #FF6E6C; color: #FF6E6C;" data-bs-toggle="modal" data-bs-target="#loginModal">Entrar</button>
-          <button class="btn btn-outline-light btn-sm" style="font-family: 'Press Start 2P', monospace; border-color: #FF6E6C; color: #FF6E6C;" data-bs-toggle="modal" data-bs-target="#cadastroModal">Cadastrar</button>
+        <div class="d-flex gap-2 text-center">
+          <button class="btn btn-outline-light btn-sm" style="font-family: var(--fonte-logo); border-color: var(--coral); color: var(--coral);" data-bs-toggle="modal" data-bs-target="#loginModal">Entrar</button>
+          <button class="btn btn-outline-light btn-sm" style="font-family: var(--fonte-logo); border-color: var(--coral); color: var(--coral);" data-bs-toggle="modal" data-bs-target="#cadastroModal">Cadastrar</button>
         </div>
       </div>
-    </nav>
-  </header>
+    </div>
+  </nav>
 
   <!-- CONTEÚDO PRINCIPAL -->
-  <main class="container text-center my-5" style="font-family: 'VT323', monospace;">
-    <h1 class="mb-4 fs-4" style="font-family: 'Press Start 2P', monospace; color: #FF6E6C;">Descubra jogos que combinam com você 🎮</h1>
+  <main class="container text-center my-5" style="font-family: var(--fonte-titulo);">
+    <h1 class="mb-4 fs-4 title-glow">Descubra jogos que combinam com você 🎮</h1>
     <p class="lead mb-4">Seja bem-vindo à plataforma Jogaê! Aqui você encontra jogos com propósito, acessibilidade e histórias que merecem ser jogadas.</p>
+
+    <!-- AVATARES VISUAIS -->
+    <div class="d-flex justify-content-center flex-wrap gap-3 mb-5">
+      <img src="imagens/avatares.png" alt="Avatares Jogaê" width="900" height="300">
+    </div>
+
+    <!-- CTA -->
     <div class="d-grid gap-3 col-10 col-md-6 mx-auto">
-      <a href="formulario.html" class="btn btn-primary">Me mostra os jogos!</a>
+      <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cadastroModal">Me mostra os jogos!</button>
       <a href="news.html" class="btn btn-outline-light">Ver novidades</a>
     </div>
   </main>
+
+  <!-- RODAPÉ -->
+  <footer class="text-center mt-5 py-4 border-top">
+    <small>&copy; 2025 Camila Adrielly dos Santos Quixabeira · Projeto Jogaê</small>
+  </footer>
 
   <!-- MODAL LOGIN -->
   <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content bg-dark text-light">
         <div class="modal-header">
-          <h5 class="modal-title" id="loginModalLabel">Login no Jogaê</h5>
+          <h5 class="modal-title" id="loginModalLabel">Entrar no Jogaê</h5>
           <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
         </div>
         <div class="modal-body">
           <form>
             <div class="mb-3">
               <label for="emailLogin" class="form-label">Email</label>
-              <input type="email" class="form-control" id="emailLogin" required />
+              <input type="email" class="form-control" id="emailLogin" required>
             </div>
             <div class="mb-3">
               <label for="senhaLogin" class="form-label">Senha</label>
-              <input type="password" class="form-control" id="senhaLogin" required />
+              <input type="password" class="form-control" id="senhaLogin" required>
             </div>
             <button type="submit" class="btn btn-primary w-100">Entrar</button>
           </form>
@@ -70,6 +81,7 @@
       </div>
     </div>
   </div>
+
   <!-- MODAL CADASTRO -->
   <div class="modal fade" id="cadastroModal" tabindex="-1" aria-labelledby="cadastroModalLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -79,31 +91,52 @@
           <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
         </div>
         <div class="modal-body">
-          <form id="formCadastro" class="needs-validation" novalidate>
+          <form id="formPreferencias" action="recomendacoes.html" method="get" class="needs-validation" novalidate>
             <div class="mb-3">
               <label for="nome" class="form-label">Qual é o seu nome?</label>
-              <input type="text" class="form-control" id="nome" required />
+              <input type="text" class="form-control" id="nome" name="nome" required>
               <div class="invalid-feedback">Por favor, digite seu nome.</div>
             </div>
             <div class="mb-3">
               <label for="idade" class="form-label">Quantos anos você tem?</label>
-              <input type="number" class="form-control" id="idade" min="10" required />
-              <div class="invalid-feedback">Você precisa ter 10 anos ou mais para usar o Jogaê.</div>
+              <input type="number" class="form-control" id="idade" name="idade" min="10" required>
+              <div class="invalid-feedback">Você precisa ter 10 anos ou mais.</div>
             </div>
-            <button type="submit" class="btn btn-outline-light w-100" style="font-family: 'Press Start 2P', monospace; border-color: #FF6E6C; color: #FF6E6C;">Cadastrar</button>
+            <div class="mb-3">
+              <label class="form-label">Gêneros favoritos</label>
+              <div class="d-flex flex-wrap gap-2">
+                <div class="form-check"><input class="form-check-input" type="checkbox" value="aventura" id="genero1"><label class="form-check-label" for="genero1">🗺️ Aventura</label></div>
+                <div class="form-check"><input class="form-check-input" type="checkbox" value="acao" id="genero2"><label class="form-check-label" for="genero2">💥 Ação</label></div>
+                <div class="form-check"><input class="form-check-input" type="checkbox" value="narrativa" id="genero3"><label class="form-check-label" for="genero3">📖 Narrativa</label></div>
+                <div class="form-check"><input class="form-check-input" type="checkbox" value="casual" id="genero4"><label class="form-check-label" for="genero4">🎈 Casual</label></div>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">A acessibilidade importa pra você?</label>
+              <select class="form-select" name="acessibilidade" required>
+                <option value="" disabled selected>Escolha aqui</option>
+                <option value="sim">Sim</option>
+                <option value="nao">Não</option>
+                <option value="tanto_faz">Tanto faz</option>
+              </select>
+              <div class="invalid-feedback">Nos diga sua opinião 🧩</div>
+            </div>
+            <div class="mb-3">
+              <label for="tempo" class="form-label">Quanto tempo você curte jogar?</label>
+              <input type="range" class="form-range" min="1" max="3" step="1" id="tempo" name="tempo">
+              <div class="form-text text-light">1 - Rápido (até 5h) · 2 - Médio (até 20h) · 3 - Longo (mais de 20h)</div>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">
+              <span class="spinner-border spinner-border-sm d-none" id="spinner" role="status" aria-hidden="true"></span>
+              <span id="btnTexto">Me mostra os jogos!</span>
+            </button>
           </form>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- RODAPÉ -->
-  <footer class="text-center mt-5 py-4 border-top">
-    <small>&copy; 2025 Camila Adrielly dos Santos Quixabeira · Projeto Jogaê</small>
-  </footer>
-
-  <!-- SCRIPTS -->
+  <!-- BOOTSTRAP -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="script.js"></script>
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Jogaê - Pesquisa</title>
+  <title>Jogaê - Recomendados</title>
   <link rel="stylesheet" href="styles.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
@@ -23,7 +23,7 @@
       <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
         <ul class="navbar-nav mx-auto text-center" style="font-family: var(--fonte-logo);">
           <li class="nav-item"><a class="nav-link text-light" href="index.html">Início</a></li>
-          <li class="nav-item"><a class="nav-link active text-light" href="pesquisa.html">Explorar</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="pesquisa.html">Explorar</a></li>
           <li class="nav-item"><a class="nav-link text-light" href="projeto.html">Sobre</a></li>
           <li class="nav-item"><a class="nav-link text-light" href="news.html">Novidades</a></li>
         </ul>
@@ -37,55 +37,35 @@
 
   <!-- CONTEÚDO PRINCIPAL -->
   <main class="container my-5" style="font-family: var(--fonte-titulo);">
-    <h1 class="text-center mb-5 fs-4 title-glow">O que dizem os dados? 📊</h1>
+    <h1 class="text-center mb-4 fs-4 title-glow">✨ Jogos que combinam com você!</h1>
+    <p class="text-center mb-5">Com base nas suas escolhas, selecionamos alguns jogos que você vai adorar:</p>
 
-    <!-- DADOS DE PESQUISA -->
-    <section class="mb-5 p-4 rounded-4 border border-light">
-      <h2 class="h5">🎮 78% dos jogadores entrevistados disseram que gostariam de mais jogos com representatividade.</h2>
-      <p>Esse dado reforça o papel do Jogaê como plataforma curadora de experiências que importam.</p>
-    </section>
-
-    <!-- TABELA DE INFORMAÇÕES -->
-    <section class="mb-5">
-      <div class="table-responsive">
-        <table class="table table-bordered text-light">
-          <thead class="table-dark">
-            <tr>
-              <th>Fator Avaliado</th>
-              <th>Importância para o Jogador</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Acessibilidade</td>
-              <td>Alta</td>
-            </tr>
-            <tr>
-              <td>Histórias Representativas</td>
-              <td>Muito Alta</td>
-            </tr>
-            <tr>
-              <td>Preço Justo</td>
-              <td>Alta</td>
-            </tr>
-            <tr>
-              <td>Sem Monetização Abusiva</td>
-              <td>Alta</td>
-            </tr>
-            <tr>
-              <td>Indicação de outros Jogadores</td>
-              <td>Média</td>
-            </tr>
-          </tbody>
-        </table>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100 bg-transparent border border-light text-white">
+          <div class="card-body">
+            <h5 class="card-title">Inclusive Quest <span class="badge bg-success">🎖️ Selo Jogaê</span></h5>
+            <p class="card-text">Um RPG com protagonistas diversos, mecânicas inclusivas e design acessível para todos os públicos.</p>
+          </div>
+        </div>
       </div>
-    </section>
-
-    <!-- FRASES DE IMPACTO -->
-    <section class="mb-5 p-4 rounded-4 border border-light">
-      <h2 class="h5">📢 “Nunca pensei que veria um personagem com deficiência auditiva num game indie. Isso me tocou muito.”</h2>
-      <p class="fst-italic">— Jogador participante da pesquisa</p>
-    </section>
+      <div class="col">
+        <div class="card h-100 bg-transparent border border-light text-white">
+          <div class="card-body">
+            <h5 class="card-title">Time Echoes <span class="badge bg-success">🎖️ Selo Jogaê</span></h5>
+            <p class="card-text">Viagem no tempo e escolhas éticas em um mundo onde cada decisão afeta a coletividade. Representatividade forte e sem monetização abusiva.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 bg-transparent border border-light text-white">
+          <div class="card-body">
+            <h5 class="card-title">Light&Sound <span class="badge bg-secondary">⚠️ Avaliação Parcial</span></h5>
+            <p class="card-text">Puzzle auditivo com acessibilidade parcial e trilha sensorial. Destaque para a proposta criativa.</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
 
   <!-- RODAPÉ -->
@@ -93,7 +73,9 @@
     <small>&copy; 2025 Camila Adrielly dos Santos Quixabeira · Projeto Jogaê</small>
   </footer>
 
-  <!-- MODAIS reaproveitados (iguais aos do index.html) -->
+  <!-- MODAIS reaproveitados -->
+  <!-- Mesmo padrão do index -->
+
   <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content bg-dark text-light">
@@ -171,7 +153,7 @@
     </div>
   </div>
 
-  <!-- BOOTSTRAP BUNDLE -->
+  <!-- BOOTSTRAP -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
